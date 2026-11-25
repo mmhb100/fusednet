@@ -1,0 +1,26 @@
+Package: fusednet
+Type: Package
+Title: Fast Sparse Fused Lasso Paths for Generalised Linear and Cox
+        Models
+Version: 0.2.1
+Authors@R: person(given = "Md Mehedi Hasan", family = "Bhuiyan", email = "309mdhasan@gmail.com", role = c("aut", "cre"))
+Description: Fits sparse fused lasso penalised regression models over a path
+    of regularisation parameters, in the style of 'glmnet'. Supported models are
+    linear, logistic, Poisson, negative binomial (with fixed or estimated
+    dispersion) and Cox proportional hazards regression (Breslow ties). The
+    penalty is lambda1 * sum|beta_j| + lambda2 * sum|beta_{j+1} - beta_j|.
+    The core solver is written in C++ (via 'Rcpp' and 'RcppArmadillo') and uses
+    accelerated proximal gradient descent (FISTA with adaptive restart) where
+    the proximal step is computed exactly in linear time with Condat's direct
+    total-variation algorithm, together with warm starts along the path, an
+    exact lambda_max computation, cross-validation, prediction and plotting.
+License: GPL (>= 2)
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.0), stats, graphics, parallel
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat (>= 3.0.0), glmnet, survival, MASS
+Config/testthat/edition: 3
+NeedsCompilation: yes
+URL: https://github.com/mmhb100/fusednet
+BugReports: https://github.com/mmhb100/fusednet/issues

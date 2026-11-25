@@ -1,0 +1,14 @@
+useDynLib(fusednet, .registration = TRUE)
+importFrom(Rcpp, evalCpp)
+importFrom(stats, predict, coef)
+
+export(fusednet, cv.fusednet, kkt.fusednet, flsa, nb.theta, relax.fusednet)
+
+S3method(predict, fusednet)
+S3method(coef, fusednet)
+S3method(print, fusednet)
+S3method(plot, fusednet)
+S3method(predict, cv.fusednet)
+S3method(coef, cv.fusednet)
+S3method(print, cv.fusednet)
+S3method(plot, cv.fusednet)
