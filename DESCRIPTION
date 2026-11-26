@@ -14,6 +14,9 @@ Description: Fits sparse fused lasso penalised regression models over a path
     the proximal step is computed exactly in linear time with Condat's direct
     total-variation algorithm, together with warm starts along the path, an
     exact lambda_max computation, cross-validation, prediction and plotting.
+    Methods: Tibshirani et al. (2005) <doi:10.1111/j.1467-9868.2005.00490.x>,
+    Beck and Teboulle (2009) <doi:10.1137/080716542>, Condat (2013)
+    <doi:10.1109/LSP.2013.2278339>.
 License: GPL (>= 2)
 Encoding: UTF-8
 Depends: R (>= 3.5.0)
