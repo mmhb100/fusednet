@@ -1,5 +1,3 @@
-## Submission
-
 This is a new submission.
 
 fusednet fits sparse fused lasso penalised linear, logistic, Poisson,
@@ -19,3 +17,4 @@ negative binomial and Cox regression paths with a C++ solver (Rcpp/RcppArmadillo
 * checking CRAN incoming feasibility ... NOTE
   Maintainer: 'Md Mehedi Hasan Bhuiyan <309mdhasan@gmail.com>'
   New submission
+
